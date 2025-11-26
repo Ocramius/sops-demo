@@ -1,4 +1,4 @@
-## Demo 001 - encrypt with a key, decrypt with another
+## Demo 003 - encrypt with PGP, decrypt with PGP/AGE
 
 See [`demo-001`](../demo-001) for basic usage
 
