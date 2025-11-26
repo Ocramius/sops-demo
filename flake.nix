@@ -11,6 +11,8 @@
     devShells.x86_64-linux.default = pkgs.mkShell {
       name = "trying-out-sops";
       nativeBuildInputs = [
+        pkgs.age
+        pkgs.gnupg
         pkgs.sops
       ];
     };
