@@ -1,0 +1,8 @@
+keys:
+  - &demo-key-1 age19ztc06r746z79lqu8ns0jj2sx84a4nqd8n4crqvjzfq8hrqmr4wqud9r9k
+
+creation_rules:
+  - path_regex: my-secrets\.json$
+    key_groups:
+      - age:
+          - *demo-key-1
