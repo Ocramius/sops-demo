@@ -1,0 +1,10 @@
+keys:
+  - &demo-key-1 age1unuh3fnddthjd9d58zr72zqfrpg0efnnfh62477av3szpz0733yqt69wwk
+  - &demo-key-2 age136gl4wx2ksryhq3rdaftsw874hw32e67hx0qy6y67xtyepukus6q7x6zcc
+
+creation_rules:
+  - path_regex: my-re-encrypted-secret\.json$
+    key_groups:
+      - age:
+          - *demo-key-1
+          - *demo-key-2
