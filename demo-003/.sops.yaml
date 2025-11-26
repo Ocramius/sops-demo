@@ -1,0 +1,13 @@
+keys:
+  - &demo-key-1 age1c80m52d97ru0u7qmkx8umf5fhem5df8dnkjg6h8z6kfnke63894sevcrh2
+  - &demo-key-2 age19xzwlmcs6euna5s9pgewt2szqgl9vg35p8s0pz6l95hs8tnnteqqfftwwt
+  - &ocramiusATgmailDOTcom 7BB9B50FE8E021187914A5C09F65FBC212EC2DF8
+
+creation_rules:
+  - path_regex: my-shared-age-and-gpg-secrets\.json$
+    key_groups:
+      - age:
+          - *demo-key-1
+          - *demo-key-2
+        pgp:
+          - *ocramiusATgmailDOTcom
