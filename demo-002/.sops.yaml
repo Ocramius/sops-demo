@@ -1,0 +1,10 @@
+keys:
+  - &demo-key-1 age16gktgzcp4z3l6sew3vdgtp4gd4m98ck5atkdgaumpjda5fv0npvsuaz53t
+  - &demo-key-2 age14v4dznhwv2eyu6r0dyl24q8knvrmefklz854mugrjewz84egmg0q43khk6
+
+creation_rules:
+  - path_regex: my-shared-secrets\.json$
+    key_groups:
+      - age:
+          - *demo-key-1
+          - *demo-key-2
